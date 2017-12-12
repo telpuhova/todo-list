@@ -9,9 +9,9 @@ var Thing = function(title, description, isChecked, group) {
 
 //ui
 $(document).ready(function() {
+  // debugger;
   var groups2 = [];
   var executed = false;
-  alert("0");
   $("#formTodo").submit(function() {
     event.preventDefault();
 
@@ -23,11 +23,8 @@ $(document).ready(function() {
 
     var newThing = new Thing(title, description, isChecked, group);
     // debugger;
-    alert("1");
     for (var i = 0; i <= groups2.length; i++) {
-      alert("2");
       if (group === groups2[i]) {
-        alert("3");
         // add new checkbox item to the list
         $("#list-" + newThing.group).append("<p id='" + newThing.title + "P'><input id='" + newThing.title + "' type='checkbox' name='" + group + "' value='" + newThing.title + "'>" + "<span id='" + newThing.title + "Span'>" + newThing.title + "</span>" + "</p>");
         // $("#list-" + newThing.group).insertBefore("#clear-" + newThing.group);
@@ -47,13 +44,11 @@ $(document).ready(function() {
           });
         });
         executed = true;
-        alert("4");
       }
     }
     if (!executed) {
       for (var i = 0; i <= groups2.length; i++) {
 
-          alert("5");
           groups2.push(newThing.group);
           var a = groups2[0];
           // DOM MANIPULATION:
@@ -61,7 +56,7 @@ $(document).ready(function() {
 
           //add group div
           // $("h1").append("<div id='" + newThing.group + "'>");
-          $(".col-sm-5").append("<div id='" + newThing.group + "'>");
+          $(".col-sm-6").append("<div class='group' id='" + newThing.group + "'>");
           $("#" + newThing.group).append("</div>");
           // $("#" + newThing.group).insertAfter("h1");
 
@@ -99,8 +94,6 @@ $(document).ready(function() {
 
 
 
-
-//^^^^^ FROZEN
 
 
     // // description becomes visible
