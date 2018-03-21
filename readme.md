@@ -1,13 +1,13 @@
-# _Todo list_
+# Todo list
 
-#### _Todo list website, 12/11/2017_
+Todo list website, 12/11/2017
 
-#### By _**telpuhova**_
+**By Natalia Telpukhova**
 
 
 ## Description
 
-_Web application that keep track of all the things you need to do._
+Web application that keep track of all the things you need to do.
 
 ### Specs
 | Behavior | Input | Output |
@@ -18,11 +18,11 @@ _Web application that keep track of all the things you need to do._
 
 ## Setup
 
-* _clone repository_
-* _open index.html in browser_
+* clone repository
+* open index.html in browser
 
 ## Technologies Used
 
-_HTML, CSS, JS, Bootstrap, jquery_
+HTML, CSS, JS, Bootstrap, jquery
 
-Copyright (c) 2017 **_telpuhova_**
+Copyright (c) 2017 Natalia Telpukhova
